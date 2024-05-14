@@ -1,0 +1,40 @@
+@import '../Common/colors';
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    h2{
+        text-transform: capitalize;
+        
+    }
+    h1{
+        text-transform: uppercase;
+        
+    }
+    
+    .prices 
+    {
+        margin: 10px;
+        p{
+            font-size: bold;
+        }
+        span{
+            
+            color:$green;
+            font-weight: 600;
+        }
+    }
+        button{
+        background: #def9ec;
+        color: #3bb77e;
+        padding: 10px;
+        border: none;
+        font-weight: 500;
+        font-size: 1rem;
+        border-radius: 4px;
+        width: 40%;
+        cursor: pointer;
+        border: 1px solid #3bb77e;
+    }
+}

@@ -1,0 +1,185 @@
+@import '../Common/colors';
+.nav_bar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 9999;
+    position: relative;
+
+    @media screen and (max-width:768px) {
+
+        padding: 0
+        
+    }
+    .nav_sidebar{
+        width: 350px;
+        height: 28rem;
+        position: absolute;
+        right: -30%;
+        top: 9rem;
+        transition: right .5s ease;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        z-index: 9999;
+
+        .items{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            padding: 10px;
+
+            
+            .items_card{
+                display: flex;
+                /* gap: 6rem; */
+                align-items: center;
+                padding: 20px;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 1px solid lightgray;
+                
+                img{
+                    width: 3rem;
+                    margin-right: 10px;
+                }
+
+                button{
+                    color: red;
+                    background: none;
+                    border: none;
+                }
+            }
+
+            .checkout{
+                width: 50%;
+                background: #def9ec;
+                color: #3bb77e;
+                border: none;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 1.2rem;
+                margin-top: 1rem;
+
+            }
+        }
+
+
+        &.move{
+            right: 0%
+        }
+    }
+
+    
+
+    .logo{
+        max-width: 8%;
+        cursor: pointer;
+    }
+    .nav_list ul{
+        display: flex;
+        font-size: 1.3rem;
+        cursor: pointer;
+        color: black;
+
+        @media screen and (max-width:768px) {
+            font-size: 11px;
+        }
+
+        li{
+            padding: 10px;
+            margin: 0 5px;
+            position: relative;
+            color: black;
+
+            a{
+                color:black;
+                text-decoration: none;
+            }
+            
+
+            .active{
+                color:$green;
+            }
+        }
+
+        
+
+        li::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            // height: 2px;
+            background-color: $green;
+            transition: width 0.3s ease;
+        }
+
+        li:hover::after {
+            width: 100%;
+        }
+    }
+    .nav_btns{
+        display: flex;
+        gap:20px;
+
+        .cartnum{
+            position: relative;
+        }
+        .count{
+            position: absolute;
+            background: $green;
+            color: $light-green;
+            padding: 5px;
+            border-radius: 50%;
+            left: 52%;
+            top: -29%;
+            width: 30px;
+            height: 30px;
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            background:none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        .nav_profile{
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 1.2rem;
+                margin-right: 10px;
+            }
+            .ava{
+                width: 3rem;
+                height: 3rem;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+        }
+
+        .logout{
+            background: $light-green;
+            color: $green;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+    }
+}

@@ -1,0 +1,56 @@
+.serve{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+
+    .serve-heading{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.2rem;
+        p{
+            color: #3bb77e;
+            font-weight: 600;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        h1{
+            text-transform: capitalize;
+            font-size: 2.2rem;
+        }
+    }
+    .cards{
+        display: flex;
+        gap: 13rem;
+        align-items: center;
+        justify-content: center;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.3rem;
+            width: 18rem;
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center; */
+                gap: 10px;
+                text-align: center;
+            }
+            img{
+                width: 10rem;
+                height: 10rem;
+            }
+            h2{
+                text-transform: capitalize;
+            }
+        }
+    }
+}

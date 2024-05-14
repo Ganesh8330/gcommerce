@@ -1,0 +1,72 @@
+.nav_bar {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0px 40px;
+  position: sticky;
+  top: 0;
+}
+.nav_bar .logo {
+  max-width: 8%;
+  cursor: pointer;
+}
+.nav_bar .nav_list ul {
+  display: flex;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.nav_bar .nav_list ul li {
+  padding: 10px;
+  margin: 0 5px;
+  position: relative;
+}
+.nav_bar .nav_list ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3bb77e;
+  transition: width 0.3s ease;
+}
+.nav_bar .nav_list ul li:hover::after {
+  width: 100%;
+}
+.nav_bar .nav_btns {
+  display: flex;
+  gap: 20px;
+}
+.nav_bar .nav_btns button {
+  display: flex;
+  align-items: center;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.nav_bar .nav_btns .nav_profile {
+  display: flex;
+  align-items: center;
+}
+.nav_bar .nav_btns .nav_profile p {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.nav_bar .nav_btns .nav_profile .ava {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.nav_bar .nav_btns .logout {
+  background: #3bb77e;
+  color: #def9ec;
+  padding: 10px;
+  border-radius: 10px;
+}/*# sourceMappingURL=Navbar.css.map */

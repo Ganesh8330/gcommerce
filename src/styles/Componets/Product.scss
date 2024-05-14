@@ -1,0 +1,78 @@
+@import '../Common/colors';
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+
+    .flex{
+        display: flex;
+        gap: 13rem;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            width: 10rem;
+            height: 10rem;
+            padding: 15px;
+            background-color: #def9ec;
+            border: 1px solid #3bb77e;
+            border-radius: 3px;
+            text-transform: capitalize;
+            
+            img{
+                width: 4rem;
+            }
+        }
+    }
+
+    
+}
+
+.products_page{
+
+    .cate_name{
+        text-transform: capitalize;
+    }
+    .sub_cate_name{
+        text-transform: capitalize;
+    }
+
+    .prod_flex{
+        display: flex;
+
+        .prod_card{
+            border: 1px solid black;
+            padding: 10px;
+            background: white;
+            width: 17rem;
+            height: 17rem;
+
+            .image{
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .price{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .newprice{
+                    color:$green;
+                    font-weight: 600;
+                }
+
+                .oldprice{
+                    text-decoration: line-through;
+                    font-weight: 600;
+                }
+            
+                
+            }
+        }
+    }
+}

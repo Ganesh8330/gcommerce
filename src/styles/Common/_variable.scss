@@ -1,0 +1,80 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+//   font-family:'Poppins", sans-serif'
+}
+.div-gallery{
+
+  .image-gallery-image{
+    width:15rem
+  }
+  .image-gallery-thumbnail-image{
+    width:4rem
+  }
+}
+
+hmtl{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3bb77e; /* Color of the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2e8a5e; /* Color of the handle on hover */
+  }
+
+body{
+    overflow-x:hidden ;
+//     background: rgb(222,249,236);
+// background: linear-gradient(180deg, rgba(222,249,236,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader-text {
+    font-size: 5em; /* adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* color of the text */
+    text-align: center;
+  }
+}
+

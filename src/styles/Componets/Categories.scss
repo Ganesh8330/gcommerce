@@ -1,0 +1,35 @@
+.categories{
+    h1{
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 4rem;
+        
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 10rem;
+            height: 10rem;
+            padding: 15px;
+            background-color:#def9ec;
+            border: 1px solid #3bb77e;
+            border-radius: 3px;
+            
+            img{
+                width: 3rem;
+                margin-bottom: 10px;
+                background-position: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

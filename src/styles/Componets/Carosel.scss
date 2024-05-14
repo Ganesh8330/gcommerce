@@ -1,0 +1,73 @@
+@import '../Common/colors';
+
+.fruitsection {
+  padding: 3rem 3rem;
+
+  .fruit_head {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .slider-container {
+    .fruit_main {
+    //   display: flex;
+    //   justify-content: center;
+      padding: 0px 20px 20px 0px;
+
+      .fruit_card {
+        border: 1px solid #3bb77e;
+        padding: 20px;
+        text-align: center;
+        border-radius: 14px;
+        margin: 10px;
+        width: 100%;
+        box-shadow: rgb(198 198 199 / 20%) 0px 8px 24px;
+
+        .fruit_img {
+          width: 6rem;
+          height: 6rem;
+        }
+
+        .fruit_title {
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+
+        .fruit_text {
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .fruit_review {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            padding: 0px 6px;
+
+            .fruit_star {
+              color: rgb(248, 212, 10);
+              width: 13px;
+            }
+          }
+
+          .fruit_seller_name {
+            font-size: 14px;
+            padding: 0px 6px;
+            border-left: 2px solid $text-grey;
+            color: rgb(27, 27, 27);
+          }
+        }
+
+        .fruit_price {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

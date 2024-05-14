@@ -1,0 +1,89 @@
+@import '../Common/colors';
+.home-footer{
+    margin-bottom: 7rem;
+    .img{
+        position: relative;
+        width: 30rem;
+
+        .waiter{
+            width: 30rem;
+        }
+            .card4{
+                position: absolute;
+                top: 80%;
+                left: 42%;
+                background-color: ghostwhite;
+                padding: 21px;
+                border-start-start-radius: 30px;
+                border-bottom-right-radius: 30px;
+
+                p{
+                    margin-bottom: 10px;
+                }
+
+                img{
+                    width: 3rem;
+                }
+            }
+        
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        gap: 19rem;
+
+        .texts{
+            width: 24rem;
+            position: relative;
+            top: 25%;
+            p{
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                color: $green;
+                font-weight: 600;
+            }
+        }
+
+        .footer{
+            .heading{
+                border-start-start-radius: 20px;
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                margin-bottom: 15px;
+                background-color: ghostwhite;
+                padding: 10px;
+                width: 40%;
+                border-end-end-radius: 20px;
+
+                .elipse{
+                    width: 3rem;
+                }
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h6{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    .col{
+                        display: flex; 
+                        gap: 10px;
+                        align-items: center;  
+         }
+
+                }
+                
+            }
+
+            
+        }
+
+    }
+}

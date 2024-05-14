@@ -1,0 +1,74 @@
+@import '../Common/colors';
+.table{
+    h3{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+
+    .product_img{
+        width: 3rem;
+    }
+    
+    .quantity{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 1.2rem;
+    
+        button{
+            width: 30px;
+            height: 30px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+}
+
+.Price_Details{
+    padding: 10px;
+
+    h2{
+        margin-bottom: 9px;
+    }
+   
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 9px;
+        
+        p{
+            margin-bottom: 12px;
+        }
+    }
+    .row2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    button{
+        width: 100%;
+        border: 1px solid #3bb77e;
+        background-color: #def9ec;
+        color: #3bb77e;
+        font-size: 1.3rem;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}

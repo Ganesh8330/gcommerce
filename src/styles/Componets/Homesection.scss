@@ -1,0 +1,184 @@
+@import '../Common/colors';
+.homesection{
+    margin-bottom: 50px;
+    .content{
+        margin-top: 3rem;
+   padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+        .free{
+            display: flex;
+            align-items: center;
+            /* gap: 14px; */
+            width: 15rem;
+            padding: 6px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+            border-radius: 50px;
+            justify-content: space-around;
+            text-transform: uppercase;
+            background-color: ghostwhite;
+            font-size: 13px;
+            
+            span{
+                color: $green;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            img{
+                width: 2rem;
+            }
+        }
+        .heading{
+            h1{
+                font-size: 4rem;
+                line-height: 5rem;
+                margin-bottom: 2rem;
+
+                span{
+                    color:$green;
+                    text-transform: capitalize;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+                margin-bottom: 13px;
+            }
+            button{
+                background: #3bb77e;
+                color: #def9ec;
+                padding: 10px;
+                width: 29%;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 7px;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+        }
+        .footer{
+            p{
+                margin-bottom: 10px;
+                font-size: 1.3rem;
+            }
+            .img-grp{
+                .play{
+                    width: 8rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .phone_img{
+        position: relative;
+        left: 31%;
+        top: 8%;
+        .phone{
+            width: 16rem;
+            height: auto;
+            // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        .card3{
+
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            position: absolute;
+            left: -25%;
+            top: 11%;
+            padding: 10px;
+            border-radius: 10px;
+            background: ghostwhite;  
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            .icon3{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 16%;
+                padding: 5px;
+                margin-right: 10px;
+
+}
+.text3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+        }
+
+        .card1{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            position: absolute;
+            right: 27%;
+            top: 31%;
+            padding: 10px;
+            border-radius: 10px;
+            background: ghostwhite;  
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            .icon{
+                width: 3rem;
+                height: 3rem;
+                background-color: #3bb77e;
+                border-radius: 16%;
+                padding: 5px;
+                margin-right: 10px;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+               
+            }
+        }
+
+        .card2{
+            background: ghostwhite; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            position: absolute;
+            top: 55%;
+            // z-index: 111;
+            left: -16%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: center;
+                    .icon-2{
+                        width: 5rem;
+                        background: #fff3ff;
+                        padding: 13px;
+                        border-radius: 50%;
+            }
+            .text2{
+                text-align: center;
+                p b{
+                    font-weight: 600;
+                }
+            }
+        }
+    }

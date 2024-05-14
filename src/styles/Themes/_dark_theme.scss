@@ -1,0 +1,9 @@
+
+@use '../Common/colors' as *;
+
+.dark-theme{
+
+    background-color: $dark-bg;
+    color: $font-white;
+
+}

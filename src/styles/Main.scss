@@ -1,0 +1,30 @@
+// layouts
+
+@import './Layouts/Navbar.scss';
+@import './Layouts/Footer.scss';
+@import './Common/variable';
+@import './Componets/Homesection.scss';
+@import './Componets/Categories.scss';
+@import './Componets/Carosel.scss';
+@import './Componets/Serve.scss';
+@import './Componets/HomeFooter.scss';
+@import './Componets/Product.scss';
+@import './Componets/ProductContainer.scss';
+@import './Componets/Recommeded.scss';
+@import './Componets/SideBar.scss';
+@import './Componets/ViewDetails.scss';
+@import './Componets/Checkout.scss';
+
+// components
+
+
+
+//common
+
+.container{
+    margin-top: 2rem;
+    padding: 0 3rem;
+}
+
+
+
