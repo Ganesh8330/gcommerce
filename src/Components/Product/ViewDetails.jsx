@@ -3,7 +3,7 @@ import { original } from "@reduxjs/toolkit";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { fetchDetails } from "../../Redux/detailsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { addtocart } from "../../Redux/productSlice";
@@ -13,6 +13,8 @@ const ViewDetails = () => {
   const dispatch = useDispatch();
   const details = useSelector((state)=>state.details.data)
   const cartDetails = useSelector((state)=>state.products.cart)
+  const user = useSelector(state => state.products.user)
+  const navigate = useNavigate();
 
   
   useEffect(()=>{
@@ -39,7 +41,6 @@ const ViewDetails = () => {
       thumbnail: details.productImg,
     },
   ];
-
 
   const handleCart = (cartdetails)=>{
 
